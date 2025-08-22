@@ -84,14 +84,14 @@ http_archive(
 
 http_archive(
     name = "libtorch_win",
-    build_file = "@//third_party/libtorch:BUILD",
+    build_file = "//third_party/libtorch:BUILD",
     strip_prefix = "libtorch",
     urls = ["https://download.pytorch.org/libtorch/nightly/cu129/libtorch-win-shared-with-deps-latest.zip"],
 )
 
 http_archive(
     name = "torch_l4t",
-    build_file = "@//third_party/libtorch:BUILD",
+    build_file = "//third_party/libtorch:BUILD",
     strip_prefix = "torch",
     type = "zip",
     urls = ["https://pypi.jetson-ai-lab.io/jp6/cu126/+f/62a/1beee9f2f1470/torch-2.8.0-cp310-cp310-linux_aarch64.whl"],
@@ -103,7 +103,7 @@ http_archive(
 
 http_archive(
     name = "tensorrt",
-    build_file = "@//third_party/tensorrt/archive:BUILD",
+    build_file = "//third_party/tensorrt/archive:BUILD",
     strip_prefix = "TensorRT-10.12.0.36",
     urls = [
         "https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/10.12.0/tars/TensorRT-10.12.0.36.Linux.x86_64-gnu.cuda-12.9.tar.gz",
@@ -112,7 +112,7 @@ http_archive(
 
 http_archive(
     name = "tensorrt_sbsa",
-    build_file = "@//third_party/tensorrt/archive:BUILD",
+    build_file = "//third_party/tensorrt/archive:BUILD",
     strip_prefix = "TensorRT-10.12.0.36",
     urls = [
         "https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/10.12.0/tars/TensorRT-10.12.0.36.Linux.aarch64-gnu.cuda-12.9.tar.gz",
@@ -121,7 +121,7 @@ http_archive(
 
 http_archive(
     name = "tensorrt_l4t",
-    build_file = "@//third_party/tensorrt/archive:BUILD",
+    build_file = "//third_party/tensorrt/archive:BUILD",
     strip_prefix = "TensorRT-10.3.0.26",
     urls = [
         "https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/10.3.0/tars/TensorRT-10.3.0.26.l4t.aarch64-gnu.cuda-12.6.tar.gz",
@@ -130,7 +130,7 @@ http_archive(
 
 http_archive(
     name = "tensorrt_win",
-    build_file = "@//third_party/tensorrt/archive:BUILD",
+    build_file = "//third_party/tensorrt/archive:BUILD",
     strip_prefix = "TensorRT-10.12.0.36",
     urls = [
         "https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/10.12.0/zip/TensorRT-10.12.0.36.Windows.win10.cuda-12.9.zip",
